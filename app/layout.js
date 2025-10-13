@@ -4,6 +4,7 @@ import { Quicksand } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Whatsapp } from '@/components/Whatsapp';
+import Script from 'next/script'; // 👈 Importamos el componente Script
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -56,6 +57,33 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
+      {/* EL SCRIPT PRINCIPAL DE GTRAManager se coloca al inicio del <head> (o al inicio del <body> con la estrategia "afterInteractive" o "lazyOnload").
+        Aquí se usa "afterInteractive" para mejorar el rendimiento inicial.
+      */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5ZBY0NHLQ7"
+        strategy="afterInteractive" // o "lazyOnload" si quieres que cargue más tarde
+      />
+
+      {/* El segundo script con la configuración se coloca inline.
+        Se usa la estrategia "afterInteractive" y se le asigna un ID.
+      */}
+      <Script
+        id="google-analytics-init" // ID único para el script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5ZBY0NHLQ7');
+          `,
+        }}
+      />
+      {/* FIN DE LA ETIQUETA DE GOOGLE
+      */}
+      
       <body className={quicksand.className}>
         <Navbar />
         <main className="min-h-screen">{children}</main>

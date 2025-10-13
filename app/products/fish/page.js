@@ -10,7 +10,7 @@ export default function FishPage({ searchParams }) {
   const initialCategorySlug = searchParams?.cat ?? null;
 
   return (
-    <main className="min-h-screen py-8">
+    <main className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <FishGallery
       />
     </main>

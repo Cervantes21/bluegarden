@@ -4,15 +4,6 @@ import { MapPin, Phone, Mail, MessageCircle, ArrowRight } from "lucide-react";
 
 const LOCATIONS = [
   {
-    nombre: "Blue Garden Cuernavaca Norte",
-    direccion: "Patzcuaro 5, Lomas de Atzingo, 62180 Cuernavaca, Mor.",
-    telefono: "777 256 88 21",
-    telHref: "tel:+527772568821",
-    whatsapp: "https://wa.me/527772568821",
-    email: "bluegarden357@gmail.com",
-    maps: "https://share.google/46wwBUOGblAgqbwlW",
-  },
-  {
     nombre: "Eco-Atl, Atl-Ecosystem Centro",
     direccion:
       "Calle Gral. H. Galeana 46, Cuernavaca Centro, Centro, 62000 Cuernavaca, Mor.",
@@ -64,11 +55,19 @@ export default function ContactCTA() {
         </div>
 
         {/* Ubicaciones */}
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        {/*
+          **CAMBIO PRINCIPAL:**
+          Cambiado de 'md:grid-cols-3' a 'md:grid-cols-2'.
+          También he añadido 'justify-center' al padre para centrar las dos columnas
+          en el caso de que el grid no ocupe todo el ancho.
+        */}
+        <div className="mt-14 grid gap-6 md:grid-cols-2 justify-center">
           {LOCATIONS.map((loc) => (
             <div
               key={loc.nombre}
-              className="rounded-2xl bg-white/10 border border-white/15 p-6 shadow-md backdrop-blur-sm flex flex-col justify-between"
+              className="rounded-2xl bg-white/10 border border-white/15 p-6 shadow-md backdrop-blur-sm flex flex-col justify-between max-w-lg mx-auto md:max-w-none md:mx-0"
+              // Agregué 'max-w-lg mx-auto' para asegurar que las tarjetas se vean bien centradas
+              // en pantallas pequeñas antes de pasar al grid de 2 columnas.
             >
               <div>
                 <h3 className="text-xl font-bold">{loc.nombre}</h3>

@@ -53,30 +53,30 @@ export default function ContactPage() {
                 </li>
                 <li className="pt-2">
                   <span className="block text-sm text-white/70">Correo</span>
-                  <a className="hover:underline" href="mailto:bluegarden357@gmail.com">
-                    bluegarden357@gmail.com
+                  <a className="hover:underline" href="mailto:atl.ecosystem@gmail.com">
+                    atl.ecosystem@gmail.com
                   </a>
                 </li>
                 <li className="pt-2">
                   <span className="block text-sm text-white/70">Facebook</span>
                   <Link
                     className="hover:underline"
-                    href="https://www.facebook.com/Biojardinesbiopiscinas"
+                    href="https://www.facebook.com/EcosistemasInteligentes"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Biojardinesbiopiscinas
+                    EcosistemasInteligentes
                   </Link>
                 </li>
                 <li className="pt-2">
                   <span className="block text-sm text-white/70">Instagram</span>
                   <Link
                     className="hover:underline"
-                    href="https://www.instagram.com/bluegarden.mx/"
+                    href="https://www.instagram.com/atl.ecosystem/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    bluegarden.mx
+                    atl.ecosystem
                   </Link>
                 </li>
               </ul>
@@ -182,7 +182,7 @@ export default function ContactPage() {
         <footer className="mt-10 text-center text-white">
           <p className="text-white/90">
             También puedes escribirnos a{' '}
-            <a className="underline" href="mailto:bluegarden357@gmail.com">bluegarden357@gmail.com</a>{' '}
+            <a className="underline" href="mailto:atl.ecosystem@gmail.com">atl.ecosystem@gmail.com</a>{' '}
             o enviarnos WhatsApp al{' '}
             <a className="underline" href="https://wa.me/525547173446" target="_blank" rel="noopener noreferrer">
               55 4717 3446

@@ -108,7 +108,7 @@ function ProjectSheet({ open, onClose, project, onPrevProject, onNextProject, ha
             {hasPrev && (
               <button
                 onClick={onPrevProject}
-                className="px-3 py-1.5 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-fuchsia-700 transition-colors"
+                className="px-3 py-1.5 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-teal-700 transition-colors"
                 title="Proyecto anterior"
               >
                 ‹ Anterior
@@ -117,7 +117,7 @@ function ProjectSheet({ open, onClose, project, onPrevProject, onNextProject, ha
             {hasNext && (
               <button
                 onClick={onNextProject}
-                className="px-3 py-1.5 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-fuchsia-700 transition-colors"
+                className="px-3 py-1.5 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-teal-700 transition-colors"
                 title="Proyecto siguiente"
               >
                 Siguiente ›
@@ -132,7 +132,7 @@ function ProjectSheet({ open, onClose, project, onPrevProject, onNextProject, ha
                   'px-3 py-1.5 rounded-md text-sm font-medium ring-1 transition-colors',
                   showCompare
                     ? 'bg-emerald-500/20 text-emerald-200 ring-emerald-400/40'
-                    : 'bg-white/10 text-white ring-white/15 hover:bg-fuchsia-700'
+                    : 'bg-white/10 text-white ring-white/15 hover:bg-teal-700'
                 )}
                 title="Alternar Antes/Después"
               >
@@ -142,7 +142,7 @@ function ProjectSheet({ open, onClose, project, onPrevProject, onNextProject, ha
             <button
               onClick={onClose}
               aria-label="Cerrar"
-              className="px-3 py-1.5 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-fuchsia-700 transition-colors"
+              className="px-3 py-1.5 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-teal-700 transition-colors"
             >
               ✕
             </button>
@@ -214,7 +214,7 @@ function ProjectSheet({ open, onClose, project, onPrevProject, onNextProject, ha
                   onClick={() => { setImgIdx(i); setShowCompare(false); }}
                   className={cx(
                     'relative aspect-square rounded-lg overflow-hidden ring-1 transition',
-                    imgIdx === i ? 'ring-fuchsia-700' : 'ring-white/10 hover:ring-fuchsia-700'
+                    imgIdx === i ? 'ring-teal-700' : 'ring-white/10 hover:ring-teal-700'
                   )}
                   title={`Imagen ${i + 1}`}
                 >
@@ -256,14 +256,14 @@ function ProjectSheet({ open, onClose, project, onPrevProject, onNextProject, ha
               <>
                 <button
                   onClick={() => setImgIdx((i) => (i - 1 + images.length) % images.length)}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 px-3 py-2 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-fuchsia-700 transition-colors"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 px-3 py-2 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-teal-700 transition-colors"
                   aria-label="Anterior imagen"
                 >
                   ‹
                 </button>
                 <button
                   onClick={() => setImgIdx((i) => (i + 1) % images.length)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 px-3 py-2 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-fuchsia-700 transition-colors"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 px-3 py-2 rounded-md bg-white/10 text-white ring-1 ring-white/15 hover:bg-teal-700 transition-colors"
                   aria-label="Siguiente imagen"
                 >
                   ›

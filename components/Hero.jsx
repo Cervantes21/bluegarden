@@ -68,7 +68,7 @@ export default function Hero() {
             aria-haspopup="true"
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="bg-white rounded-full overflow-hidden p-2 w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center ring-2 ring-transparent hover:ring-green-600 focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-200"
+            className="bg-white rounded-full overflow-hidden p-2 w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center ring-2 ring-transparent hover:ring-teal-600 focus:outline-none focus:ring-4 focus:ring-teal-300 transition-all duration-200"
           >
             <Image
               src="/logo_ecoatl.png"
@@ -96,7 +96,7 @@ export default function Hero() {
                 </Link>
                 <Link
                   href="/products"
-                  className="flex-1 text-center rounded-full px-5 py-3 text-sm sm:text-base font-semibold ring-2 ring-green-600 text-white hover:bg-green-600 hover:ring-green-600 transition-colors duration-200"
+                  className="flex-1 text-center rounded-full px-5 py-3 text-sm sm:text-base font-semibold ring-2 ring-teal-600 text-white hover:bg-teal-600 hover:ring-teal-600 transition-colors duration-200"
                   onClick={() => setOpen(false)}
                 >
                   Productos

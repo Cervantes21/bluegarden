@@ -45,7 +45,7 @@ export default function Navbar() {
               <FaWater />
               <Link href="/servicios/estanques" onClick={closeMenu}>Estanques</Link>
             </li>
-            <li className="flex items-center gap-2 py-1 px-6 hover:text-green-600">
+            <li className="flex items-center gap-2 py-1 px-6 hover:text-teal-700">
               <FaSpa />
               <Link href="/servicios/biopool" onClick={closeMenu}>BioPiscinas</Link>
             </li>
@@ -87,7 +87,7 @@ export default function Navbar() {
                     <li className="py-1 px-14 hover:text-green-600">
                       <Link href="/products/plants/flotantes/arraigadas" onClick={closeMenu}>Arraigadas</Link>
                     </li>
-                    <li className="py-1 px-14 hover:text-green-600">
+                    <li className="py-1 px-14 hover:text-teal-800">
                       <Link href="/products/plants/flotantes" onClick={closeMenu}>Ver todo Flotantes</Link>
                     </li>
                   </ul>
@@ -105,7 +105,7 @@ export default function Navbar() {
               </ul>
             )}
             {/* Peces */}
-            <li className="flex items-center gap-2 py-1 px-6 hover:text-green-600">
+            <li className="flex items-center gap-2 py-1 px-6 hover:text-teal-700">
               <FaFish />
               <Link href="/products/fish" onClick={closeMenu}>Peces</Link>
             </li>
@@ -133,7 +133,7 @@ export default function Navbar() {
               <FaWater />
               <Link href="/servicios/estanques" onClick={closeMenu}>Estanques</Link>
             </li>
-            <li className="flex items-center gap-2 py-1 hover:text-green-600">
+            <li className="flex items-center gap-2 py-1 hover:text-teal-700">
               <FaSpa />
               <Link href="/servicios/biopool" onClick={closeMenu}>BioPiscinas</Link>
             </li>
@@ -177,7 +177,7 @@ export default function Navbar() {
                   <li className="py-1 hover:text-green-600">
                     <Link href="/products/plants/flotantes/arraigadas" onClick={closeMenu}>Arraigadas</Link>
                   </li>
-                  <li className="py-1 hover:text-green-600">
+                  <li className="py-1 hover:text-teal-800">
                     <Link href="/products/plants/flotantes" onClick={closeMenu}>Ver todo Flotantes</Link>
                   </li>
                 </ul>
@@ -195,7 +195,7 @@ export default function Navbar() {
             </ul>
 
             {/* Peces (desktop) */}
-            <li className="flex items-center gap-2 py-1 hover:text-green-600 mt-2">
+            <li className="flex items-center gap-2 py-1 hover:text-teal-700 mt-2">
               <FaFish />
               <Link href="/products/fish" onClick={closeMenu}>Peces</Link>
             </li>
@@ -215,7 +215,7 @@ export default function Navbar() {
         </Link>
 
         {/* Hamburger */}
-        <button className="lg:hidden text-green-600 focus:outline-none" onClick={toggleMenu} aria-label="Abrir menú">
+        <button className="lg:hidden text-teal-900 focus:outline-none" onClick={toggleMenu} aria-label="Abrir menú">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
@@ -259,8 +259,8 @@ export default function Navbar() {
           </li>
 
           {/* Otros enlaces */}
-          <li><Link href="/gallery" onClick={closeMenu} className="hover:text-green-600">Galería</Link></li>
-          <li><Link href="/about" onClick={closeMenu} className="hover:text-green-600">Nosotros</Link></li>
+          <li><Link href="/gallery" onClick={closeMenu} className="hover:text-teal-600">Galería</Link></li>
+          <li><Link href="/about" onClick={closeMenu} className="hover:text-teal-600">Nosotros</Link></li>
           <li><Link href="/contact" onClick={closeMenu} className="hover:text-green-600">Contacto</Link></li>
         </ul>
       </nav>

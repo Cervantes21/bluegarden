@@ -145,7 +145,7 @@ function PlantCard({ plant, onOpen }) {
           {sizes.map((t) => (
             <span
               key={t}
-              className="text-[10px] rounded bg-fuchsia-50 text-fuchsia-700 px-1.5 py-0.5 border border-fuchsia-100"
+              className="text-[10px] rounded bg-teal-50 text-teal-700 px-1.5 py-0.5 border border-teal-100"
             >
               {t}
             </span>
@@ -157,7 +157,7 @@ function PlantCard({ plant, onOpen }) {
         <button
           type="button"
           onClick={() => onOpen(plant)}
-          className="inline-flex items-center justify-center rounded-xl px-3 py-2 text-sm font-medium text-white bg-teal-700 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-500"
+          className="inline-flex items-center justify-center rounded-xl px-3 py-2 text-sm font-medium text-white bg-teal-700 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
         >
           Ver detalles
         </button>
@@ -229,9 +229,9 @@ function DetailsModal({ plant, open, onClose, onNext, onPrev }) {
   const sizes = tamanos_disponibles || tamaños_disponibles;
 
   const navBtn =
-    'inline-flex items-center rounded-xl px-3 py-2 text-sm bg-[#0e1b2b] text-white hover:bg-fuchsia-700 transition border-0 focus:outline-none focus:ring-0';
+    'inline-flex items-center rounded-xl px-3 py-2 text-sm bg-[#0e1b2b] text-white hover:bg-teal-700 transition border-0 focus:outline-none focus:ring-0';
   const navBtnMobile =
-    'rounded-xl px-3 py-2 text-sm bg-[#0e1b2b] text-white hover:bg-fuchsia-700 transition border-0 focus:outline-none focus:ring-0';
+    'rounded-xl px-3 py-2 text-sm bg-[#0e1b2b] text-white hover:bg-teal-700 transition border-0 focus:outline-none focus:ring-0';
 
   const nutrientes = cuidados?.consumo_nutrientes || {};
 
@@ -320,7 +320,7 @@ function DetailsModal({ plant, open, onClose, onNext, onPrev }) {
                     {sizes.map((t) => (
                       <span
                         key={t}
-                        className="text-[11px] rounded bg-fuchsia-50 text-fuchsia-700 px-2 py-0.5 border border-fuchsia-100 dark:bg-fuchsia-900/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200"
+                        className="text-[11px] rounded bg-teal-50 text-teal-700 px-2 py-0.5 border border-teal-100 dark:bg-teal-900/20 dark:border-teal-900/30 dark:text-teal-200"
                       >
                         {t}
                       </span>
@@ -493,7 +493,7 @@ export default function PlantsCategoryView({
                 {b.href ? (
                   <Link
                     href={b.href}
-                    className={classNames('hover:underline', onDark ? 'hover:text-fuchsia-300' : 'hover:text-fuchsia-700')}
+                    className={classNames('hover:underline', onDark ? 'hover:text-teal-300' : 'hover:text-teal-700')}
                   >
                     {b.label}
                   </Link>
@@ -535,8 +535,8 @@ export default function PlantsCategoryView({
                 className={classNames(
                   'w-full sm:w-72 rounded-xl border px-3 py-2 outline-none focus:ring-2',
                   onDark
-                    ? 'bg-transparent border-white text-white placeholder:text-white/70 focus:ring-fuchsia-400'
-                    : 'bg-white border-slate-300 text-slate-900 placeholder:text-slate-500 focus:ring-fuchsia-500'
+                    ? 'bg-transparent border-white text-white placeholder:text-white/70 focus:ring-teal-400'
+                    : 'bg-white border-slate-300 text-slate-900 placeholder:text-slate-500 focus:ring-teal-500'
                 )}
               />
             )}
@@ -547,8 +547,8 @@ export default function PlantsCategoryView({
                 className={classNames(
                   'rounded-xl border px-3 py-2 outline-none focus:ring-2',
                   onDark
-                    ? 'bg-transparent border-white text-white focus:ring-fuchsia-400'
-                    : 'bg-white border-slate-300 text-slate-900 focus:ring-fuchsia-500'
+                    ? 'bg-transparent border-white text-white focus:ring-teal-400'
+                    : 'bg-white border-slate-300 text-slate-900 focus:ring-teal-500'
                 )}
               >
                 <option className="text-slate-900" value="nombre">Ordenar por nombre común (A–Z)</option>
@@ -571,7 +571,7 @@ export default function PlantsCategoryView({
                   className={classNames(
                     'rounded-full border px-3 py-1 text-sm transition',
                     active
-                      ? 'bg-fuchsia-600 text-white border-fuchsia-600'
+                      ? 'bg-teal-600 text-white border-teal-600'
                       : onDark
                         ? 'border-white text-white hover:bg-white/10'
                         : 'border-slate-300 text-slate-700 hover:bg-slate-50'
